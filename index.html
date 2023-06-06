@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Client Review Survey</h1>
+        <p id="description">
+          Thank you for choosing us! Please leave&nbsp;a&nbsp;review.
+        </p>
+      </header>
+      <form id="survey-form" action="">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+            type="text"
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            class="form-control"
+            id="email"
+            placeholder="Email"
+            required
+            type="email"
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<small>(Optional)</small>
+          </label>
+          <input
+            class="form-control"
+            id="number"
+            min="18"
+            max="99"
+            placeholder="0"
+            type="number"
+          />
+        </div>
+        <div class="form-group">
+          <p>What kind of service did we offer you?</p>
+          <select
+            class="form-control"
+            id="dropdown"
+            name="project-type"
+            required
+          >
+            <option value selected disabled>Select</option>
+            <option value="branding">Branding</option>
+            <option value="logo design">Logo Design</option>
+            <option value="web design">UX/UI Design</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>How was your experience working with us?</p>
+          <label for="ratings-label">
+            <input
+              class="radio-control"
+              checked
+              name="ratings"
+              type="radio"
+              value="1"
+            />5<small>(Very good)</small></label
+          >
+          <label for="ratings-label">
+            <input
+              class="radio-control"
+              name="ratings"
+              type="radio"
+              value="2"
+            />4</label
+          >
+          <label for="ratings-label">
+            <input
+              class="radio-control"
+              name="ratings"
+              type="radio"
+              value="3"
+            />3</label
+          >
+          <label for="ratings-label">
+            <input
+              class="radio-control"
+              name="ratings"
+              type="radio"
+              value="4"
+            />2</label
+          >
+          <label for="ratings-label">
+            <input
+              class="radio-control"
+              name="ratings"
+              type="radio"
+              value="5"
+            />1</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Would you recommend us to a friend?</p>
+          <label for="recommend-label">
+            <input
+              class="radio-control"
+              checked
+              name="recommend"
+              type="radio"
+              value="Most Likely"
+            />Yes</label
+          >
+          <label for="recommend-label">
+            <input
+              class="radio-control"
+              name="recommend"
+              type="radio"
+              value="Most Likely"
+            />No</label
+          >
+          <label for="recommend-label">
+            <input
+              class="radio-control"
+              name="recommend"
+              type="radio"
+              value="Most Likely"
+            />Maybe</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What additional services would you like us to offer?</p>
+          <label for="additional-services-label">
+            <input
+              class="checkbox-control"
+              name="additional-services"
+              type="checkbox"
+              value="SEO"
+            />SEO (Search Engine Optimization)</label
+          >
+          <label for="additional-services-label">
+            <input
+              class="checkbox-control"
+              name="additional-services"
+              type="checkbox"
+              value="Email Marketing"
+            />Email Marketing</label
+          >
+          <label for="additional-services-label">
+            <input
+              class="checkbox-control"
+              name="additional-services"
+              type="checkbox"
+              value="PPC"
+            />PPC (Pay-per-click advertising)</label
+          >
+          <label for="additional-services-label">
+            <input
+              class="checkbox-control"
+              name="additional-services"
+              type="checkbox"
+              value="Video Production"
+            />Video Production</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Suggestions?</p>
+          <textarea
+            class="text-area"
+            id="comments"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button class="submit-btn" id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+      <footer>
+        <Small>A freeCodeCamp Project Done by: Cathron Paul</small>
+      </footer>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
