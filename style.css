@@ -151,19 +151,56 @@ small {
 }
 
 footer {
+    align-items: center;
     background-color: var(--color3);
     color: var(--color2);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 150px;
-    padding: 20px;
-    text-align: center;
+    padding: 4rem;
 }
 
 footer small {
     color: var(--color2);
     font-size: 12px;
+}
+
+footer .left {
+    align-items: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top: 2px solid var(--color5);
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+#freeCodeCamp {
+    width: 100%;
+    height: auto;
 }
 
 /*media queries---------------------------------------------------------------------------*/
@@ -184,6 +221,23 @@ footer small {
     p, label {
         font-size: 1.6rem;
     }
+
+    footer {
+        flex-direction: row;
+    }
+
+    footer .left {
+        width: 50%;
+        padding: 4rem;
+    }
+
+    footer .right {
+        align-items: start;
+        border: none;
+        border-left: 2px solid var(--color5);
+        padding: 4rem;
+        width: 50%;
+    }
 }
 
 /* Medium devices such as tablets (768px and up) */
@@ -198,6 +252,26 @@ footer small {
     h1 {
         font-size: calc(calc(4rem) * 1.618);
     }
+
+    footer .left {
+        
+        width: 64%;
+        padding: 4rem;
+    }
+
+    footer .right {
+        align-items: start;
+        border: none;
+        border-left: 2px solid var(--color5);
+        padding: 4rem;
+        width: 36%;
+    }
+
+    #freeCodeCamp {
+        width: calc(calc(270px) * 1.618);
+        height: auto;
+    }
+
 }
 
 /* Largest devices such as desktops (1280px and up) */
@@ -205,4 +279,5 @@ footer small {
     p, label {
         font-size: 2rem;
     }
+
 }
