@@ -69,8 +69,8 @@ body {
 
 .container {
     background-color: var(--color3);
-    margin: 4.5rem auto;
-    width: 100%;
+    margin: auto;
+    width: fit-content;
 }
 
 header {
@@ -151,64 +151,49 @@ small {
 }
 
 footer {
-    align-items: center;
-    background-color: var(--color3);
-    color: var(--color2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 150px;
-    padding: 4rem;
-}
-
-footer small {
-    color: var(--color2);
-    font-size: 12px;
-}
-
-footer .left {
-    align-items: center;
-    border: none;
-    display: flex;
-    justify-content: center;
     padding: 2rem;
-    text-align: center;
-    width: 100%;
 }
 
-footer .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-top: 2px solid var(--color5);
-    margin: 0;
-    padding: 2rem 0;
-    width: 100%;
+footer p {
+    color: var(--color5);
+    font-size: 1.2rem;
 }
 
-.info {
+.origin {
     display: flex;
     align-items: center;
-    margin: 5px 0;
+    margin: 0 auto;
 }
 
-.fa {
-    margin-right: 5px;
+.left {
+    padding: 1rem;
 }
 
 #freeCodeCamp {
-    width: 100%;
+    width: calc(17.5vw * 1.618);
     height: auto;
+    max-width: 24rem;
+}
+
+#freeCodeCamp path {
+    fill: var(--color5);
+}
+
+.right {
+    padding: 1rem;
+    border-left: 1px solid var(--color5);
 }
 
 /*media queries---------------------------------------------------------------------------*/
 
 
-@media only screen and (min-width: 22em) {
+@media only screen and (min-width: 20em) {
     h1 {
         font-size: calc(calc(1.95rem) * 1.618);
+    }
+
+    .left, .right {
+        padding: 2rem;
     }
 }
 
@@ -223,27 +208,17 @@ footer .right {
     }
 
     footer {
-        flex-direction: row;
+        padding: 2rem;
     }
 
-    footer .left {
-        width: 50%;
-        padding: 4rem;
-    }
-
-    footer .right {
-        align-items: start;
-        border: none;
-        border-left: 2px solid var(--color5);
-        padding: 4rem;
-        width: 50%;
-    }
 }
 
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (min-width: 48em) {
-    .container {
-        width: 72%;
+
+    
+    footer p {
+        font-size: 1.4rem;
     }
 }
 
@@ -252,32 +227,4 @@ footer .right {
     h1 {
         font-size: calc(calc(4rem) * 1.618);
     }
-
-    footer .left {
-        
-        width: 64%;
-        padding: 4rem;
-    }
-
-    footer .right {
-        align-items: start;
-        border: none;
-        border-left: 2px solid var(--color5);
-        padding: 4rem;
-        width: 36%;
-    }
-
-    #freeCodeCamp {
-        width: calc(calc(270px) * 1.618);
-        height: auto;
-    }
-
-}
-
-/* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 80em) {
-    p, label {
-        font-size: 2rem;
-    }
-
 }
